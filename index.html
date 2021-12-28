@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da velha</title>
+</head>
+
+<body>
+    <div class="score">
+        <p id="scoreboard">PLACAR:<br>O -  <span id="scoreO">0</span> <br> X -  <span id="scoreX">0</span> </p>
+        <button id="btn-zerar" onclick="zerarPlacar()" >Zerar placar</button>
+    </div>
+
+    <div class="container-center">
+        <h1>Jogo da Velha</h1>
+
+        <div class="linha-1">
+            <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> 
+            <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        </div>
+
+        <div class="linha-2">
+            <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        </div>
+
+        <div class="linha-3">
+            <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        </div>
+    
+
+        <div class="container-bottom"> <!-- apagar -->
+            <div class="jogador" id="jogador">
+                <label>Jogador:</label>
+                <label id="jogador-selecionado">
+            </div>
+            
+                <div class="vencedor">
+                    <label id="vence-velha">Vencedor:</label>
+                    <label id=vencedor-selecionado>
+                    <label id=velha>
+                </div>
+
+                <div>
+                    <button onclick="reiniciar()">Nova rodada</button>
+                </div>
+                <button id="btn-zerar2" onclick="zerarPlacar()" >Zerar placar</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js" ></script>
+</body>
+</html>
